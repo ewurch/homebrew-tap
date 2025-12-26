@@ -2,7 +2,7 @@ class Bragger < Formula
   desc "Job application tracker and AI-powered resume generator"
   homepage "https://github.com/ewurch/bragger"
   url "https://github.com/ewurch/bragger/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "8e995e6bb3ed74cf77a43fa6b7745eea095df511018f18a1a82fff080b1534f1"
   license "MIT"
   head "https://github.com/ewurch/bragger.git", branch: "main"
   depends_on "go" => :build
