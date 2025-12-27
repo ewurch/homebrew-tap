@@ -5,21 +5,21 @@
 class Bragger < Formula
   desc "Job application tracker and AI-powered resume generator"
   homepage "https://github.com/ewurch/bragger"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ewurch/bragger/releases/download/v0.3.1/bragger_0.3.1_darwin_amd64.tar.gz"
-      sha256 "a1b5639cb5f38d72fe26230e60685ea299f3e15984d381d5fd62fa0c30de01f1"
+      url "https://github.com/ewurch/bragger/releases/download/v0.4.0/bragger_0.4.0_darwin_amd64.tar.gz"
+      sha256 "29acbfa74401336efd6f3d5e11d7aa83288776547d9e1426cfc5eb310de0cace"
 
       def install
         bin.install "bragger"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ewurch/bragger/releases/download/v0.3.1/bragger_0.3.1_darwin_arm64.tar.gz"
-      sha256 "de5c1355f36ca824ddacedf5d3495376d0318c8c86ced5a131870d7dbec10e5d"
+      url "https://github.com/ewurch/bragger/releases/download/v0.4.0/bragger_0.4.0_darwin_arm64.tar.gz"
+      sha256 "5940da4acd0f29bd655269c6d7a5c8ece3087e14d4653d8a269d122f32953280"
 
       def install
         bin.install "bragger"
@@ -29,15 +29,15 @@ class Bragger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ewurch/bragger/releases/download/v0.3.1/bragger_0.3.1_linux_amd64.tar.gz"
-      sha256 "cee6332efecc7672e89bd40fe990a528e3246f9fdee09a836e785b577835b305"
+      url "https://github.com/ewurch/bragger/releases/download/v0.4.0/bragger_0.4.0_linux_amd64.tar.gz"
+      sha256 "868c5337e95bc6b1729bae20b4350d680c7536338538c214114e2bf0f30b929a"
       def install
         bin.install "bragger"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ewurch/bragger/releases/download/v0.3.1/bragger_0.3.1_linux_arm64.tar.gz"
-      sha256 "991ee907f155a5031b4ae72e7bcbca41ca94b8fe2ead4ef69ff8428310c4e2b0"
+      url "https://github.com/ewurch/bragger/releases/download/v0.4.0/bragger_0.4.0_linux_arm64.tar.gz"
+      sha256 "afc46f748c3b2bceb1d0dbf217465e0c292cc81db307f5d20765b8468d43c0b1"
       def install
         bin.install "bragger"
       end
